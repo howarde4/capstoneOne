@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %} Register {% endblock %}
+
+{% block content %}
+<h2>Register Below!</h2>
+<br>
+<div id="row" class="container">
+  <form class="formtitle" method="POST" id="regForm">
+    {{ form.hidden_tag() }}
+    {% for field in form if field.widget.input_type != 'hidden'%}
+    <p>
+      {{field.label}}:
+      {{field}}
+      {% for err in field.errors %}
+      <span class="form-text text-danger">{{err}}</span>
+      {% endfor %}
+    </p>
+    {% endfor %}
+    <button class="btn" id="add">Register</button>
+  </form>
+  <img class="ruPic" src="https://www.tvinsider.com/wp-content/uploads/2020/08/rupauls-drag-race-season-11-1014x570.jpg">
+</div>
+  {% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} Rupaul's Drag Race! {% endblock %}
+
+{% block content %}
+<h2>Search for a queen!</h2>
+<form id='queenForm'>
+  <input type='text' id='name' name='name' placeholder="Enter Queen Name">
+  <button type="submit" id='add' class="btn btn-primary btn-sm">Get Queen!</button>
+</form>
+<br>
+<p id="error"></p>
+<br>
+
+<div id='queenDiv' class='row' data-user-name={{user.username}}> 
+</div>
+
+<br>
+<br>
+<br>
+<div class="right"> 
+  <form class="buttonform" action="/users/{{user.username}}/delete" method="POST">
+      <button id="delete" name="delete" class="btn btn-danger">Delete User</button>
+  </form>
+</div>
+<br>
+ 
+  
+  {% endblock %}

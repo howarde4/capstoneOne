@@ -1,0 +1,135 @@
+.card-img-top {
+width: 100%;
+height: 50vh;
+object-fit: contain;
+}
+
+.card-deck {
+    display: flex;
+}
+
+.right {
+    right: 100%;
+}
+
+#navbutton {
+    color: white;
+    background-color: rgb(255, 125, 233);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px aqua;
+    font-family: 'Fredoka One', cursive;
+    padding: 5px;
+    margin: 5px;
+}
+
+h1 {
+    font-family: 'Modak', cursive;
+    font-size: 4rem !important;
+    color: rgb(0, 255, 234);
+    text-shadow: 0 0 1px rgb(75, 3, 241),
+    1px 1px 0px rgb(233, 255, 40),
+    2px 2px 7px rgb(241, 3, 229),
+    4px 4px 14px rgb(75, 3, 241);
+}
+
+h2 {
+    font-family: 'Modak', cursive;
+    font-size: 4rem !important;
+    color: rgb(0, 255, 234);
+    text-shadow: 0 0 1px rgb(75, 3, 241),
+    1px 1px 0px rgb(233, 255, 40),
+    2px 2px 7px rgb(241, 3, 229),
+    4px 4px 14px rgb(75, 3, 241);
+}
+
+#dragName {
+    font-family: 'Fredoka One', cursive;
+    color: rgb(255, 125, 233);
+    text-shadow: 0px 0px 1px rgb(7, 2, 250),
+                 1px 1px 4px rgb(75, 3, 241);
+}
+
+#quote {
+    font-family: 'Fredoka One', cursive;
+}
+
+body {
+    background-color: rgba(207, 155, 255, 0.377) !important;
+}
+
+#queenForm {
+	border: solid 5px rgb(96, 2, 248);
+	border-radius: 5%;
+	width: 350px;
+	padding: 20px;
+	box-sizing: border-box;
+	font-family: 'Fredoka One', cursive;
+}
+
+#add {
+    color: white;
+    background-color: rgb(255, 125, 233);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px aqua;
+    font-family: 'Fredoka One', cursive;
+    padding: 5px;
+    margin: 5px;
+}
+
+#name {
+    border: 2px solid rgb(0, 225, 255);
+    box-shadow: 0px 0px 10px blue;
+    border-radius: 5px;
+}
+
+#delete {
+    box-shadow: 1px 1px 2px 1px rgb(16, 20, 253);
+    font-family: 'Fredoka One', cursive;
+    position: fixed;
+    bottom: 10px;
+    right: 10px; 
+}
+
+#queenBtn {
+    color: white;
+    background-color: rgb(255, 125, 233);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px aqua;
+    font-family: 'Fredoka One', cursive;
+    padding: 5px;
+    margin: 5px;
+}
+
+.ruPic {
+    max-width: 50%;
+    height: auto;
+    flex: 33.33%;
+    padding: 5px;
+    border-radius: 5%;
+    margin-right: 0;
+    margin-left: auto;
+    border: 5px solid rgb(96, 2, 248);
+}
+
+#row {
+    display: flex;
+}
+
+#regForm {
+	border: solid 5px rgb(96, 2, 248);
+	border-radius: 5%;
+	width: 350px;
+	padding: 50px;
+	box-sizing: border-box;
+	font-family: 'Fredoka One', cursive;
+}
+
+.card-body {
+    background-color: rgba(0, 255, 234, 0.384);;
+}
+
+#error {
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    color: red;
+}

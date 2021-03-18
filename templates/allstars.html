@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Rupaul's Allstars! {% endblock %}
+
+{% block content %}
+<h1>Allstars List</h1>
+<br>
+<container data-user-name={{user.username}}>
+    <div id='allstarsDiv' class='row'>
+        {% for allstar in user.allstar %}
+            <div class="card-deck" style="width: 25%;">
+                <div class="card mb-3" style="max-width: 18rem;border: 5px solid rgb(75, 3, 241);">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h3 class="card-title" id="dragName">
+                            {{allstar.name}}
+                        </h3>
+                        <img src={{allstar.img}} class="card-img-top">
+                            <br>
+                        <form style="display:float;text-align:right" action="/allstars/{{allstar.id}}/delete" method="POST">
+                            <button id="trash" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button>
+                        </form>
+                    </div>
+                    <div id="quote" class="card-footer bg-transparent">
+                        {{allstar.quote}}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+  </div>
+</container>
+<br>
+<div class="right"> 
+    <a href="/users/{{user.username}}"><button id="add" class="btn btn-primary">Back</button></a>
+</div>
+  <br>
+  <br>
+  {% endblock %}
