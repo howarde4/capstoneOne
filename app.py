@@ -7,7 +7,7 @@ import os
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///dragdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.enviorn.get('DATABASE_URL', 'postgresql:///dragdb')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ECHO'] = True
 app.config["SECRET_KEY"] = os.environ.get('SECRET_KEY', 'shhsecret')
