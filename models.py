@@ -46,7 +46,6 @@ class Allstar(db.Model):
     username = db.Column(db.Text, db.ForeignKey('users.username'))
 
     def serialize(self):
-        """Returns a dict representation of todo which we can turn into JSON"""
         return {
             'id': self.id,
             'name': self.name,
