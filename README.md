@@ -1,3 +1,8 @@
+First project completed from Springboard bootcamp. Solo, full stack project- responsible for both front and back end development as well as design. Backend developed with Flask and WTForms, created a database with SQLAlchemy to store user registration, password, as well as content from page (user saves different drag queens to their database). Username password encrypted with bcrypt. Frontend developed with HTML, CSS and Bootstrap. 
+
+
+
+*****************************************
 API: https://drag-race-api.readme.io/docs
 
 
